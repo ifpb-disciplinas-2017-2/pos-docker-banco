@@ -41,6 +41,6 @@ public class ControladorDePessoas extends HttpServlet {
     private void preencherTodasAsPessoas(PrintWriter out) {
         service
                 .todasAsPessoas()
-                .forEach(p -> out.println(p.getNome()+"</br>"));
+                .forEach(p -> out.println(p.getId() + " -  " + p.getNome() + "</br>"));
     }
 }
